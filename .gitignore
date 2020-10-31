@@ -1,0 +1,14 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+.env
+.DS_Store
+node_modules
+.vscode
+lerna-debug
+
+packages/*.js
+packages/*.js.map
+packages/*.d.ts
+packages/*/styles-css.ts
+packages/*/package-lock.json
+**/*.tsbuildinfo*

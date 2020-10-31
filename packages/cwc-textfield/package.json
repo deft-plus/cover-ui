@@ -1,0 +1,29 @@
+{
+  "name": "@cover-ui/cwc-textfield",
+  "version": "0.0.1",
+  "description": "Cover UI textfield web component",
+  "author": "Deft+",
+  "license": "Apache-2.0",
+  "main": "cwc-textfield.js",
+  "module": "cwc-textfield.js",
+  "types": "cwc-textfield.d.ts",
+  "scripts": {
+    "build:ts": "tsc -b tsconfig.app.json",
+    "build:spec": "tsc -b tsconfig.spec.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://gitlab.com/deft-plus/cover-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/deft-plus/cover-ui.git",
+    "directory": "packages/cwc-textfield"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/deft-plus/cover-ui/issues"
+  },
+  "dependencies": {
+    "lit-element": "^2.4.0"
+  }
+}
