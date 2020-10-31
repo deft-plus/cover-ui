@@ -19,6 +19,15 @@
     "comma-spacing": ["error", { "before": false, "after": true }],
     "constructor-super": "error",
     "eol-last": ["error", "always"],
+    "object-curly-spacing": ["error", "always", {
+      "arraysInObjects": true,
+      "objectsInObjects": false
+    }],
+    "array-bracket-spacing": ["error", "never", {
+      "singleValue": false,
+      "objectsInArrays": false,
+      "arraysInArrays": false
+    }],
     "indent": ["error", 2, {
       "SwitchCase": 1,
       "VariableDeclarator": "first",
