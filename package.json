@@ -25,13 +25,14 @@
     "format": "",
     "lint": "npm run lint:ts && npm run lint:css",
     "lint:ts": "eslint packages/**/*.ts; exit 0",
-    "lint:css": "echo \"\\033[0;31m\\033[1m✖ Linting for CSS/SCSS is currently not supported.\\033[0m\n\" && exit 0",
+    "lint:css": "stylelint \"**/*.{css,scss,sass}\"; exit 0",
     "test": "npm run build:tests",
     "test:debug": "",
     "watch:demos": "es-dev-server --app-index demos/index.html --node-resolve --watch --port=4000",
     "watch:ts": "npm run build -- -w",
     "watch:css": "",
-    "watch:test": ""
+    "watch:test": "",
+    "watch:fixed": "echo \"\\033[0;31m\\033[1m✖ This will run a specific package only for devs.\\033[0m\n\" && exit 0"
   },
   "dependencies": {},
   "devDependencies": {
