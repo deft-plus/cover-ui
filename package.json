@@ -5,13 +5,13 @@
   "description": "A set of UI Web Components with a modern and simple design for web development.",
   "license": "Apache-2.0",
   "private": true,
-  "homepage": "https://gitlab.com/deft-plus/cover-ui",
+  "homepage": "https://github.com/deft-plus/cover-ui#README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/deft-plus/cover-ui.git"
+    "url": "https://github.com/deft-plus/cover-ui"
   },
   "bugs": {
-    "url": "https://gitlab.com/deft-plus/cover-ui/issues"
+    "url": "https://github.com/deft-plus/cover-ui/issues"
   },
   "scripts": {
     "clear": "rm -f packages/*/*-css.ts & rm -f packages/*/*.js & rm -f packages/*/*.d.ts & rm -f packages/*/build/* & rm -f packages/*/tests/*",

@@ -14,14 +14,14 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://gitlab.com/deft-plus/cover-ui",
+  "homepage": "https://github.com/deft-plus/cover-ui",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/deft-plus/cover-ui.git",
+    "url": "https://github.com/deft-plus/cover-ui",
     "directory": "packages/cwc-button"
   },
   "bugs": {
-    "url": "https://gitlab.com/deft-plus/cover-ui/issues"
+    "url": "https://github.com/deft-plus/cover-ui/issues"
   },
   "dependencies": {
     "lit-element": "^2.4.0"
