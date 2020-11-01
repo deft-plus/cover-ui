@@ -1,17 +1,15 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
-    "color-hex-case": [
-      "lower",
-      {
-        "message": "Lowercase letters are easier to distinguish from numbers"
-      }
-    ],
-    "indentation": [
-      2,
-      {
-        "message": "Please use 2 spaces for indentation."
-      }
-    ]
+    "rule-empty-line-before": [ "always", {
+      "except": ["inside-block", "after-single-line-comment"]
+    }],
+    "color-hex-case": "lower",
+    "color-hex-length": "long",
+    "indentation": 2,
+    "font-family-name-quotes": "always-where-recommended",
+    "function-url-quotes": "always",
+    "string-quotes": "single",
+    "selector-attribute-quotes": "always"
   }
 }

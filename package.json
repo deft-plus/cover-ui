@@ -31,7 +31,7 @@
     "watch:ts": "npm run build -- -w",
     "watch:css": "",
     "watch:test": "",
-    "watch:demos": "es-dev-server --app-index demos/index.html --node-resolve --watch --port=4000",
+    "watch:demos": "es-dev-server --node-resolve --base-path demos --port=4000 --watch --open",
     "watch": "echo \"\\033[0;31m\\033[1m✖ This will run a specific package only for devs.\\033[0m\n\" && exit 0"
   },
   "dependencies": {},
