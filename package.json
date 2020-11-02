@@ -5,7 +5,7 @@
   "description": "A set of UI Web Components with a modern and simple design for web development.",
   "license": "Apache-2.0",
   "private": true,
-  "homepage": "https://github.com/deft-plus/cover-ui#README.md",
+  "homepage": "https://github.com/deft-plus/cover-ui#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/deft-plus/cover-ui"
@@ -14,7 +14,7 @@
     "url": "https://github.com/deft-plus/cover-ui/issues"
   },
   "scripts": {
-    "clear": "rm -f packages/*/*-css.ts & rm -f packages/*/*.js & rm -f packages/*/*.d.ts & rm -f packages/*/build/* & rm -f packages/*/tests/*",
+    "clear": "rm -f packages/*/*/*-css.ts & rm -f packages/*/*/*.js & rm -f packages/*/*/*.d.ts & rm -f packages/*/*/build/* & rm -f packages/*/*/tests/*",
     "build": "npm run clear && npm run build:css && npm run build:ts",
     "build:test": "npm run clear && npm run build:spec",
     "build:ts": "lerna run build:ts",
@@ -26,7 +26,7 @@
     "lint": "npm run lint:ts && npm run lint:css",
     "lint:ts": "eslint packages/**/*.ts; exit 0",
     "lint:css": "stylelint \"**/*.{css,scss,sass}\"; exit 0",
-    "test": "npm run build:tests",
+    "test": "",
     "test:debug": "",
     "watch:ts": "npm run build -- -w",
     "watch:css": "",

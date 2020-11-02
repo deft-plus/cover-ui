@@ -2,6 +2,12 @@
   "version": "0.0.1",
   "npmClient": "npm",
   "packages": [
-    "packages/*"
+    "packages/components/*",
+    "packages/core/*",
+    "packages/designs/*",
+    "packages/elements/*",
+    "packages/forms/*",
+    "packages/helpers/*",
+    "packages/layouts/*"
   ]
 }

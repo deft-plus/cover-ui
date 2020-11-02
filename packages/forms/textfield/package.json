@@ -1,12 +1,12 @@
 {
-  "name": "@cover-ui/cwc-button",
+  "name": "@cover-ui/cwc-textfield",
   "version": "0.0.1",
-  "description": "Cover UI button web component",
+  "description": "Cover UI textfield web component",
   "author": "Deft+",
   "license": "Apache-2.0",
-  "main": "cwc-button.js",
-  "module": "cwc-button.js",
-  "types": "cwc-button.d.ts",
+  "main": "cwc-textfield.js",
+  "module": "cwc-textfield.js",
+  "types": "cwc-textfield.d.ts",
   "scripts": {
     "build:ts": "tsc -b tsconfig.app.json",
     "build:spec": "tsc -b tsconfig.spec.json"
@@ -14,11 +14,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/deft-plus/cover-ui",
+  "homepage": "https://github.com/deft-plus/cover-ui/packages/forms/textfield#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/deft-plus/cover-ui",
-    "directory": "packages/cwc-button"
+    "directory": "packages/forms/textfield"
   },
   "bugs": {
     "url": "https://github.com/deft-plus/cover-ui/issues"

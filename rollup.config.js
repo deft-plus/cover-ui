@@ -5,9 +5,9 @@ import minifyHTML from 'rollup-plugin-minify-html-literals';
 import strip from '@rollup/plugin-strip';
 import copy from 'rollup-plugin-copy';
 
-const packageNames = [
-  'cwc-button',
-  'cwc-textfield'
+const packages = [
+  { folder: 'forms', name: 'button' },
+  { folder: 'forms', name: 'textfield' }
 ];
 
 const htmlCopyTransform = (contentsRaw) => {
@@ -22,11 +22,11 @@ const htmlCopyTransform = (contentsRaw) => {
 };
 
 const configs = [];
-packageNames.forEach((name) => {
+packages.forEach((pkg) => {
   const es6 = {
-    input: `packages/${name}/build/${name}.js`,
+    input: `packages/${pkg.folder}/${pkg.name}/build/cwc-${pkg.name}.js`,
     output: {
-      file: `packages/${name}/${name}.js`,
+      file: `packages/${pkg.folder}/${pkg.name}/cwc-${pkg.name}.js`,
       format: 'es',
       sourcemap: false
     },
@@ -38,13 +38,13 @@ packageNames.forEach((name) => {
       copy({
         targets: [
           {
-            src: `packages/${name}/${name}.js`,
-            dest: `packages/${name}`,
+            src: `packages/${pkg.folder}/${pkg.name}/cwc-${pkg.name}.js`,
+            dest: `packages/${pkg.folder}/${pkg.name}`,
             transform: htmlCopyTransform
           },
           {
-            src: `packages/${name}/build/*.d.ts`,
-            dest: `packages/${name}`
+            src: `packages/${pkg.folder}/${pkg.name}/build/*.d.ts`,
+            dest: `packages/${pkg.folder}/${pkg.name}`
           }
         ]
       })

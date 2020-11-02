@@ -1,7 +1,8 @@
 :host {
   /** Variables for the component */
-  --color: #333333;
-  --background-color: #fdfdfd;
+  --color: 59, 59, 59;
+  --background-color: 243, 243, 243;
+  --change-color: 134, 134, 134;
 
   /** Host styles */
   display: inline-flex;
@@ -21,12 +22,12 @@
     padding: 9px 18px;
     border-radius: 3px;
     border: 1px solid transparent;
-    font-family: inherit;
+    font-family: Barlow, Roboto, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     transition: background 0.8s linear;
     -webkit-tap-highlight-color: transparent;
     // Default color will be white
-    background-color: rgba(var(---background-color, #fdfdfd), 0.07);
-    color: var(--color, #333333);
+    background-color: rgba(var(--background-color), 0.07);
+    color: rgb(var(--color));
 
     /** Ripple effect */
     position: relative;
@@ -41,22 +42,22 @@
       top: 0;
       left: 0;
       pointer-events: none;
-      background-image: radial-gradient(circle, rgb(var(--color, #333333)) 10%, transparent 10.01%);
+      background-image: radial-gradient(circle, rgb(var(--color)) 10%, transparent 10.01%);
       background-repeat: no-repeat;
       background-position: center;
       background-size: 1500%;
       opacity: 0;
       transition: background 0.87s, opacity 1.1s;
-      &:hover {
-        background-color: black !important;
-      }
-      &:active {
-        background-color: rgba(134, 134, 134, 0.712);
-        &::after {
-          background-size: 0%;
-          opacity: 0.35;
-          transition: 0s;
-        }
+    }
+    &:hover {
+      background-color: rgba(var(--change-color), 0.1);
+    }
+    &:active {
+      background-color: rgba(var(--change-color), 0.22);
+      &::after {
+        background-size: 0%;
+        opacity: 0.35;
+        transition: 0s;
       }
     }
   }

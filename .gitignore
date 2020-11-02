@@ -6,10 +6,11 @@ node_modules
 .vscode
 lerna-debug
 
-packages/*/*.js
-packages/*/*.js.map
-packages/*/*.d.ts
-packages/*/build
-packages/*/styles-css.ts
-packages/*/package-lock.json
+packages/**/*.js
+packages/**/*.js.map
+packages/**/*.d.ts
+packages/**/build
+packages/**/tests
+packages/**/styles-css.ts
+packages/**/package-lock.json
 **/*.tsbuildinfo*
