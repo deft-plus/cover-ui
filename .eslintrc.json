@@ -24,7 +24,7 @@
     "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
     "max-len": ["error", {
       "code": 120,
-      "comments": 65,
+      "comments": 90,
       "ignoreTrailingComments": true,
       "ignoreUrls": true,
       "ignoreStrings": true,
