@@ -42,6 +42,7 @@
     "@typescript-eslint/parser": "^4.3.0",
     "@wemake-services/stylelint-config-scss": "^0.4.1",
     "autoprefixer": "^10.0.1",
+    "boxicons": "^2.0.7",
     "es-dev-server": "^1.57.7",
     "eslint": "^7.10.0",
     "html-minifier-terser": "^5.1.1",
