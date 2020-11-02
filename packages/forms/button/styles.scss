@@ -3,6 +3,8 @@
   --color: 59, 59, 59;
   --background-color: 243, 243, 243;
   --change-color: 134, 134, 134;
+  --font-size: 1rem;
+  --font: "Barlow", "Roboto", "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
 
   /** Host styles */
   display: inline-flex;
@@ -18,11 +20,11 @@
     outline: none;
     white-space: nowrap;
     user-select: none;
-    font-size: 1rem;
+    font-size: var(--font-size);
     padding: 9px 18px;
     border-radius: 3px;
     border: 1px solid transparent;
-    font-family: Barlow, Roboto, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font);
     transition: background 0.8s linear;
     -webkit-tap-highlight-color: transparent;
     // Default color will be white
@@ -34,7 +36,7 @@
     overflow: hidden;
     transform: translate3d(0, 0, 0);
     &::after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 100%;
@@ -57,7 +59,7 @@
       &::after {
         background-size: 0%;
         opacity: 0.35;
-        transition: 0s;
+        transition-duration: 0s;
       }
     }
   }

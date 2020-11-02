@@ -10,6 +10,9 @@ const nodeSassImport = require('node-sass-import');
 const renderSass = util.promisify(sass.render);
 const writeFile = util.promisify(fs.writeFile);
 
+const autoprefixer = require('autoprefixer')
+const postcss = require('postcss')
+
 /**
  * Delimiter to replace with the css code in the template
  */
@@ -31,8 +34,10 @@ async function sassToCss(sassFile) {
     },
     outputStyle: 'compressed'
   });
+  // Prefix with common browser prefixes
+  const prefixed = await postcss([autoprefixer]).process(result.css, { from: undefined });
   // Strip any Byte Order Marking from output CSS
-  let cssStr = result.css.toString();
+  let cssStr = prefixed.css.toString();
   if (cssStr.charCodeAt(0) === 0xFEFF) { cssStr = cssStr.substr(1); }
   return cssStr;
 }

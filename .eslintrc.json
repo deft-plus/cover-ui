@@ -19,6 +19,18 @@
     "comma-spacing": ["error", { "before": false, "after": true }],
     "constructor-super": "error",
     "eol-last": ["error", "always"],
+    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
+    "max-len": ["error", {
+      "code": 120,
+      "comments": 65,
+      "ignoreTrailingComments": true,
+      "ignoreUrls": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreRegExpLiterals": true
+    }],
     "object-curly-spacing": ["error", "always", {
       "arraysInObjects": true,
       "objectsInObjects": false
@@ -43,9 +55,6 @@
       "ignoreComments": false,
       "ignoredNodes": ["TemplateLiteral *"]
     }],
-    "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
-    "keyword-spacing": ["error", { "before": true, "after": true }],
-    "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
     "spaced-comment": ["error", "always", {
       "line": { "markers": ["!"] },
       "block": { "balanced": true, "markers": ["!"], "exceptions": ["*"] }

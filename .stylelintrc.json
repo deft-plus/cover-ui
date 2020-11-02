@@ -1,15 +1,18 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": ["@wemake-services/stylelint-config-scss"],
+  "plugins": ["stylelint-scss"],
   "rules": {
-    "rule-empty-line-before": [ "always", {
-      "except": ["inside-block", "after-single-line-comment"]
-    }],
+    "indentation": 2,
+    "string-quotes": "double",
     "color-hex-case": "lower",
     "color-hex-length": "long",
-    "indentation": 2,
-    "font-family-name-quotes": "always-where-recommended",
     "function-url-quotes": "always",
-    "string-quotes": "single",
-    "selector-attribute-quotes": "always"
+    "selector-attribute-quotes": "always",
+    "max-line-length": [120, {
+      "ignore": ["non-comments"]
+    }],
+    "rule-empty-line-before": [ "always", {
+      "except": ["inside-block", "after-single-line-comment"]
+    }]
   }
 }
