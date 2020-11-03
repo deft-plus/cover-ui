@@ -17,7 +17,7 @@
   "homepage": "https://github.com/deft-plus/cover-ui#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/deft-plus/cover-ui",
+    "url": "https://github.com/deft-plus/cover-ui.git",
     "directory": "packages/forms/button"
   },
   "bugs": {
