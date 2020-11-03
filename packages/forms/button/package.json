@@ -12,7 +12,8 @@
     "build:spec": "tsc -b tsconfig.spec.json"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry":"https://npm.pkg.github.com"
   },
   "homepage": "https://github.com/deft-plus/cover-ui#readme",
   "repository": {
