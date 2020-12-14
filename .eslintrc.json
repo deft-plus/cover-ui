@@ -23,14 +23,15 @@
     "keyword-spacing": ["error", { "before": true, "after": true }],
     "space-infix-ops": ["error", { "int32Hint": false }],
     "brace-style": ["error", "stroustrup", { "allowSingleLine": true }],
+    "no-unused-vars": ["error", { "vars": "all", "args": "none" }],
     "max-len": ["error", {
       "code": 120,
       "comments": 90,
       "ignoreTrailingComments": true,
       "ignoreUrls": true,
-      "ignoreStrings": true,
-      "ignoreTemplateLiterals": true,
-      "ignoreRegExpLiterals": true
+      "ignoreStrings": false,
+      "ignoreTemplateLiterals": false,
+      "ignoreRegExpLiterals": false
     }],
     "object-curly-spacing": ["error", "always", {
       "arraysInObjects": true,
