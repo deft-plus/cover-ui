@@ -52,7 +52,7 @@ export class Button extends LitElement {
 
   public render(): TemplateResult {
     return html`
-      <button class='button'>${this.label}</button>
+      <button ?disabled="${this.disabled}" class='button'>${this.label}</button>
     `;
   }
 }

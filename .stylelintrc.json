@@ -13,6 +13,9 @@
     }],
     "rule-empty-line-before": [ "always", {
       "except": ["inside-block", "after-single-line-comment"]
+    }],
+    "plugin/no-low-performance-animation-properties": [true, {
+      "ignoreProperties": ["background"]
     }]
   }
 }

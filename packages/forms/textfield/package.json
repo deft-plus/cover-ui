@@ -9,7 +9,8 @@
   "types": "cwc-textfield.d.ts",
   "scripts": {
     "build:ts": "tsc -b tsconfig.app.json",
-    "build:spec": "tsc -b tsconfig.spec.json"
+    "build:spec": "tsc -b tsconfig.spec.json",
+    "watch:ts": "tsc -w -b tsconfig.app.json"
   },
   "publishConfig": {
     "access": "public"
