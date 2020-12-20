@@ -1,6 +1,6 @@
 {
   "name": "cover-ui",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "author": "Deft+",
   "description": "A set of UI Web Components with a modern and simple design for web development.",
   "license": "Apache-2.0",
@@ -27,9 +27,11 @@
     "lint:css": "stylelint \"**/*.{css,scss,sass}\"; exit 0",
     "test": "echo \"\\033[0;31m\\033[1m✖ Testing is not available for now.\\033[0m\n\" && exit 0",
     "test:debug": "echo \"\\033[0;31m\\033[1m✖ Testing is not available for now.\\033[0m\n\" && exit 0",
+
     "watch:demos": "es-dev-server --node-resolve --base-path demos --port=3800 --watch --open",
     "watch:button": "lerna run watch:ts --scope @cover-ui/cwc-button",
-    "watch:textfield": "lerna run watch:ts --scope @cover-ui/cwc-textfield"
+    "watch:textfield": "lerna run watch:ts --scope @cover-ui/cwc-textfield",
+    "watch:icon": "lerna run watch:ts --scope @cover-ui/cwc-icon"
   },
   "dependencies": {
     "@wemake-services/stylelint-config-scss": "^0.4.1"

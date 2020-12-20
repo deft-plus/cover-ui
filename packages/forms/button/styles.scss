@@ -1,3 +1,5 @@
+$icons-fonts: "boxicons" !important;
+
 :host {
   /** Variables for the component */
   --text-color: 59, 59, 59;
@@ -65,6 +67,22 @@
         opacity: 0.35;
         transition-duration: 0s;
       }
+    }
+
+    // Buttons icons and icons
+    i {
+      font-family: $icons-fonts;
+      font-weight: 400;
+      font-style: normal;
+      font-variant: normal;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      speak: none;
+      -webkit-font-smoothing: antialiased;
+    }
+    &.icon {
+      padding: 7px;
     }
   }
 }

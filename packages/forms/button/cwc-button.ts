@@ -1,11 +1,11 @@
 import { LitElement, customElement, html, TemplateResult, property } from 'lit-element';
+import { classMap } from 'lit-html/directives/class-map';
 import { style } from './styles-css';
+import 'boxicons';
 
 @customElement('cwc-button')
 export class Button extends LitElement {
 
-  /** Button clean. Not outlined and transparent. */
-  @property({ type: Boolean, reflect: true }) clean = true;
   /** Button outlined and a background color transparent. */
   @property({ type: Boolean, reflect: true }) lined = false;
   /** Button filled with a background color. */
@@ -41,18 +41,47 @@ export class Button extends LitElement {
    * 
    * Any other configuration will return a standard button.
    */
-  get isIconButton(): boolean {
+  private get isIconButton(): boolean {
     const hasLeadIcon = this.leadIcon !== '';
     const hasTrailIcon = this.trailIcon !== '';
     const hasLabel = this.label !== '';
     return hasLeadIcon && !hasTrailIcon && !hasLabel;
   }
 
+  /**
+   * Property renders the classes to be apply in the button
+   * depending on the properties.
+   */
+  private get renderClasses() {
+    return classMap({
+      'lined': this.lined,
+      'solid': this.solid,
+      'icon': this.isIconButton
+    });
+  }
+
   static styles = style;
 
   public render(): TemplateResult {
     return html`
-      <button ?disabled="${this.disabled}" class='button'>${this.label}</button>
+      <button
+        id="button"
+        class="button ${this.renderClasses}"
+        ?disabled="${this.disabled}"
+        aria-label="${this.label || this.leadIcon}"
+      >
+        ${this.leadIcon ? this.renderLeadIcon() : ''}
+        ${this.label}
+        ${this.trailIcon ? html`<box-icon name="${this.trailIcon}"></box-icon>` : ''}
+      </button>
+    `;
+  }
+
+  private renderLeadIcon(): TemplateResult {
+    return html`
+      <cwc-icon
+        name="${this.leadIcon}"
+      ></cwc-icon>
     `;
   }
 }

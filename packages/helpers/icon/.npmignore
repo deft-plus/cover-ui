@@ -1,0 +1,9 @@
+images/*
+build/*
+tests/*
+tsconfig.json
+*.spec.js
+*.ts
+!*.d.ts
+*.scss
+node_modules

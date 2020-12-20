@@ -7,7 +7,8 @@ import copy from 'rollup-plugin-copy';
 
 const packages = [
   { folder: 'forms', name: 'button' },
-  { folder: 'forms', name: 'textfield' }
+  { folder: 'forms', name: 'textfield' },
+  { folder: 'helpers', name: 'icon' }
 ];
 
 const htmlCopyTransform = (contentsRaw) => {
