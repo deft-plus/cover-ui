@@ -1,7 +1,7 @@
 import { LitElement, customElement, html, TemplateResult, property } from 'lit-element';
 import { classMap } from 'lit-html/directives/class-map';
 import { style } from './styles-css';
-import 'boxicons';
+import '@cover-ui/cwc-icon';
 
 @customElement('cwc-button')
 export class Button extends LitElement {

@@ -25,6 +25,7 @@
     "url": "https://github.com/deft-plus/cover-ui/issues"
   },
   "dependencies": {
+    "@cover-ui/cwc-icon": "0.0.5-alpha.0",
     "lit-element": "^2.4.0"
   }
 }
